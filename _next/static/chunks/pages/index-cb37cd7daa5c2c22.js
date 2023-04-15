@@ -521,9 +521,7 @@ const NFTList = ()=>{
     };
     (0,react.useEffect)(()=>{
         loadNfts();
-    }, [
-        loadNfts
-    ]);
+    }, []);
     // -----------------------------------
     // buy -----------------------------------
     const buyNFT = async (tokenId)=>{
