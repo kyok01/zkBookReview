@@ -1,4 +1,4 @@
-import { BookReview } from './BookReview.js';
+import { MintNFT } from './MintNFT.js';
 import {
   isReady,
   shutdown,
@@ -32,7 +32,7 @@ let users = [Bob, SuperBob, MegaBob, Jack];
 const zkAppPrivateKey = PrivateKey.random();
 const zkAppAddress = zkAppPrivateKey.toPublicKey();
 
-const zkAppInstance = new BookReview(zkAppAddress);
+const zkAppInstance = new MintNFT(zkAppAddress);
 const deployTxn = await Mina.transaction(deployerAccount, () => {
   AccountUpdate.fundNewAccount(deployerAccount);
   zkAppInstance.deploy();

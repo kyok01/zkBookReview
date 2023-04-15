@@ -14,7 +14,13 @@ const config: HardhatUserConfig = {
 	solidity: '0.8.18',
 	defaultNetwork: "hardhat",
 	networks: {
-	},
+		hardhat: {
+			accounts: {
+				count: 10,
+				balance: "10000000000000000000", // 10 ETH
+			  },
+		}
+	}
 };
 
 export default config;

@@ -14,7 +14,7 @@
  */
 // import { Mina, PrivateKey, shutdown } from 'snarkyjs';
 // import fs from 'fs/promises';
-// import { BookReview } from './bookReview.js';
+// import { MintNFT } from './mintNFT.js';
 
 // // check command line arg
 // let network = process.argv[2];
@@ -42,11 +42,11 @@
 // const Network = Mina.Network(config.url);
 // Mina.setActiveInstance(Network);
 // let zkAppAddress = zkAppKey.toPublicKey();
-// let zkApp = new BookReview(zkAppAddress);
+// let zkApp = new MintNFT(zkAppAddress);
 
 // // compile the contract to create prover keys
 // console.log('compile the contract...');
-// await BookReview.compile();
+// await MintNFT.compile();
 
 // // call update() and send transaction
 // console.log('build transaction and create proof...');

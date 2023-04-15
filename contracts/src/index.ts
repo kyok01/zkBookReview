@@ -1,3 +1,3 @@
-import { BookReview } from './BookReview.js';
+import { MintNFT } from './MintNFT.js';
 
-export { BookReview };
+export { MintNFT };
