@@ -1,9 +1,8 @@
 
 import Head from 'next/head';
-import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { FC, useEffect, useState } from 'react';
-import { Grid, GridItem, Stack, Input, Button,Text } from "@chakra-ui/react"
+import { Stack, Input, Button,Text, Image } from "@chakra-ui/react"
 import {
   Mina,
   isReady,
@@ -432,13 +431,12 @@ export const PostReview: FC = () => {
   };
   // ----------------------------------
 
-
   return (
     <div>
       <Stack align='center'>
       <Stack align='center'>
-        <Stack direction='row'>
-          <Image src={`${tokenId}.png`} width={150} height={200} alt="logo" className={styles.img} />
+          <Stack direction='row'>
+            <Image src={`/${tokenId}.png`} width={200} height={300} alt="img" className={styles.img} />
           <div>
             <Text fontSize='xl'>title: {bookTitle}</Text>
             <Text fontSize='md'>description: {bookDescription}</Text>
