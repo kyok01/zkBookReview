@@ -84,51 +84,51 @@ const functions = {
     },
     createSetSecretTransaction: async (args)=>{
         const transaction = await snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Mina.transaction */ .No.transaction(()=>{
-            state.zkapp.setSecret(args.secret1, args.secret2, args.secret3, args.secret4, args.secret5);
+            state.zkapp.setSecret(args.secret1, args.secret2);
         });
         state.transaction = transaction;
     },
     createProveReadingTransaction: async (args)=>{
-        const verifiedCId1 = state.zkapp.verifiedCId1.get();
-        const verifiedCId2 = state.zkapp.verifiedCId2.get();
-        const verifiedCId3 = state.zkapp.verifiedCId3.get();
-        const verifiedCId4 = state.zkapp.verifiedCId4.get();
-        const verifiedCId5 = state.zkapp.verifiedCId5.get();
-        const verifiedCId6 = state.zkapp.verifiedCId6.get();
-        const verifiedCId7 = state.zkapp.verifiedCId7.get();
-        if (verifiedCId1.equals((0,snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN)(0))) {
+        const verifiedCId1 = Number(state.zkapp.verifiedCId1.get().toString());
+        const verifiedCId2 = Number(state.zkapp.verifiedCId2.get().toString());
+        const verifiedCId3 = Number(state.zkapp.verifiedCId3.get().toString());
+        const verifiedCId4 = Number(state.zkapp.verifiedCId4.get().toString());
+        const verifiedCId5 = Number(state.zkapp.verifiedCId5.get().toString());
+        const verifiedCId6 = Number(state.zkapp.verifiedCId6.get().toString());
+        const verifiedCId7 = Number(state.zkapp.verifiedCId7.get().toString());
+        if (verifiedCId1 === 0) {
             const transaction = await snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Mina.transaction */ .No.transaction(()=>{
-                state.zkapp.proveReading1(args.cId, args.secret1, args.secret2, args.secret3, args.secret4, args.secret5);
+                state.zkapp.proveReading1(args.cId, args.secret1, args.secret2);
             });
             state.transaction = transaction;
-        } else if (verifiedCId2.equals((0,snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN)(0))) {
+        } else if (verifiedCId2 === 0) {
             const transaction = await snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Mina.transaction */ .No.transaction(()=>{
-                state.zkapp.proveReading2(args.cId, args.secret1, args.secret2, args.secret3, args.secret4, args.secret5);
+                state.zkapp.proveReading2(args.cId, args.secret1, args.secret2);
             });
             state.transaction = transaction;
-        } else if (verifiedCId3.equals((0,snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN)(0))) {
+        } else if (verifiedCId3 === 0) {
             const transaction = await snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Mina.transaction */ .No.transaction(()=>{
-                state.zkapp.proveReading3(args.cId, args.secret1, args.secret2, args.secret3, args.secret4, args.secret5);
+                state.zkapp.proveReading3(args.cId, args.secret1, args.secret2);
             });
             state.transaction = transaction;
-        } else if (verifiedCId4.equals((0,snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN)(0))) {
+        } else if (verifiedCId4 === 0) {
             const transaction = await snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Mina.transaction */ .No.transaction(()=>{
-                state.zkapp.proveReading4(args.cId, args.secret1, args.secret2, args.secret3, args.secret4, args.secret5);
+                state.zkapp.proveReading4(args.cId, args.secret1, args.secret2);
             });
             state.transaction = transaction;
-        } else if (verifiedCId5.equals((0,snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN)(0))) {
+        } else if (verifiedCId5 === 0) {
             const transaction = await snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Mina.transaction */ .No.transaction(()=>{
-                state.zkapp.proveReading5(args.cId, args.secret1, args.secret2, args.secret3, args.secret4, args.secret5);
+                state.zkapp.proveReading5(args.cId, args.secret1, args.secret2);
             });
             state.transaction = transaction;
-        } else if (verifiedCId6.equals((0,snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN)(0))) {
+        } else if (verifiedCId6 === 0) {
             const transaction = await snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Mina.transaction */ .No.transaction(()=>{
-                state.zkapp.proveReading6(args.cId, args.secret1, args.secret2, args.secret3, args.secret4, args.secret5);
+                state.zkapp.proveReading6(args.cId, args.secret1, args.secret2);
             });
             state.transaction = transaction;
-        } else if (verifiedCId7.equals((0,snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN)(0))) {
+        } else if (verifiedCId7 === 0) {
             const transaction = await snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Mina.transaction */ .No.transaction(()=>{
-                state.zkapp.proveReading7(args.cId, args.secret1, args.secret2, args.secret3, args.secret4, args.secret5);
+                state.zkapp.proveReading7(args.cId, args.secret1, args.secret2);
             });
             state.transaction = transaction;
         }
@@ -273,7 +273,7 @@ var __dirname = "/";
 /******/ 			// return url for filenames not based on template
 /******/ 			if (chunkId === 829) return "static/chunks/cc8f0cfa-b03d37774bdf7fc0.js";
 /******/ 			// return url for filenames based on template
-/******/ 			return "static/chunks/" + chunkId + "." + "f4bffcd2c973ebf1" + ".js";
+/******/ 			return "static/chunks/" + chunkId + "." + "a53a7b66419df2ed" + ".js";
 /******/ 		};
 /******/ 	}();
 /******/ 	

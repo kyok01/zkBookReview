@@ -32,70 +32,70 @@ class BookReview extends snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .SmartContract 
         this.verifiedCId6 = (0,snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .State */ .ZM)();
         this.verifiedCId7 = (0,snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .State */ .ZM)();
     }
-    setSecret(secret1, secret2, secret3, secret4, secret5) {
+    setSecret(secret1, secret2) {
         const x = this.x.get();
         this.x.assertEquals(x);
         this.x.assertEquals((0,snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN)(0));
-        this.x.set(snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Poseidon.hash */ .jm.hash([secret1, secret2, secret3, secret4, secret5]));
+        this.x.set(snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Poseidon.hash */ .jm.hash([secret1, secret2,]));
     }
-    proveReading1(cId, secret1, secret2, secret3, secret4, secret5) {
+    proveReading1(cId, secret1, secret2) {
         const x = this.x.get();
         this.x.assertEquals(x);
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Poseidon.hash */ .jm.hash([secret1, secret2, secret3, secret4, secret5]).assertEquals(x);
+        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Poseidon.hash */ .jm.hash([secret1, secret2,]).assertEquals(x);
         const verifiedCId1 = this.verifiedCId1.get();
         this.verifiedCId1.assertEquals(verifiedCId1);
         this.verifiedCId1.assertEquals((0,snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN)(0));
         this.verifiedCId1.set(cId);
     }
-    proveReading2(cId, secret1, secret2, secret3, secret4, secret5) {
+    proveReading2(cId, secret1, secret2) {
         const x = this.x.get();
         this.x.assertEquals(x);
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Poseidon.hash */ .jm.hash([secret1, secret2, secret3, secret4, secret5]).assertEquals(x);
+        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Poseidon.hash */ .jm.hash([secret1, secret2,]).assertEquals(x);
         const verifiedCId2 = this.verifiedCId2.get();
         this.verifiedCId2.assertEquals(verifiedCId2);
         this.verifiedCId2.assertEquals((0,snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN)(0));
         this.verifiedCId2.set(cId);
     }
-    proveReading3(cId, secret1, secret2, secret3, secret4, secret5) {
+    proveReading3(cId, secret1, secret2) {
         const x = this.x.get();
         this.x.assertEquals(x);
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Poseidon.hash */ .jm.hash([secret1, secret2, secret3, secret4, secret5]).assertEquals(x);
+        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Poseidon.hash */ .jm.hash([secret1, secret2,]).assertEquals(x);
         const verifiedCId3 = this.verifiedCId3.get();
         this.verifiedCId3.assertEquals(verifiedCId3);
         this.verifiedCId3.assertEquals((0,snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN)(0));
         this.verifiedCId3.set(cId);
     }
-    proveReading4(cId, secret1, secret2, secret3, secret4, secret5) {
+    proveReading4(cId, secret1, secret2) {
         const x = this.x.get();
         this.x.assertEquals(x);
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Poseidon.hash */ .jm.hash([secret1, secret2, secret3, secret4, secret5]).assertEquals(x);
+        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Poseidon.hash */ .jm.hash([secret1, secret2,]).assertEquals(x);
         const verifiedCId4 = this.verifiedCId4.get();
         this.verifiedCId4.assertEquals(verifiedCId4);
         this.verifiedCId4.assertEquals((0,snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN)(0));
         this.verifiedCId4.set(cId);
     }
-    proveReading5(cId, secret1, secret2, secret3, secret4, secret5) {
+    proveReading5(cId, secret1, secret2) {
         const x = this.x.get();
         this.x.assertEquals(x);
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Poseidon.hash */ .jm.hash([secret1, secret2, secret3, secret4, secret5]).assertEquals(x);
+        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Poseidon.hash */ .jm.hash([secret1, secret2,]).assertEquals(x);
         const verifiedCId5 = this.verifiedCId5.get();
         this.verifiedCId5.assertEquals(verifiedCId5);
         this.verifiedCId5.assertEquals((0,snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN)(0));
         this.verifiedCId5.set(cId);
     }
-    proveReading6(cId, secret1, secret2, secret3, secret4, secret5) {
+    proveReading6(cId, secret1, secret2) {
         const x = this.x.get();
         this.x.assertEquals(x);
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Poseidon.hash */ .jm.hash([secret1, secret2, secret3, secret4, secret5]).assertEquals(x);
+        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Poseidon.hash */ .jm.hash([secret1, secret2,]).assertEquals(x);
         const verifiedCId6 = this.verifiedCId6.get();
         this.verifiedCId6.assertEquals(verifiedCId6);
         this.verifiedCId6.assertEquals((0,snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN)(0));
         this.verifiedCId6.set(cId);
     }
-    proveReading7(cId, secret1, secret2, secret3, secret4, secret5) {
+    proveReading7(cId, secret1, secret2) {
         const x = this.x.get();
         this.x.assertEquals(x);
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Poseidon.hash */ .jm.hash([secret1, secret2, secret3, secret4, secret5]).assertEquals(x);
+        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Poseidon.hash */ .jm.hash([secret1, secret2,]).assertEquals(x);
         const verifiedCId7 = this.verifiedCId7.get();
         this.verifiedCId7.assertEquals(verifiedCId7);
         this.verifiedCId7.assertEquals((0,snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN)(0));
@@ -138,9 +138,6 @@ __decorate([
     snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .method */ .UD,
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
         snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN]),
     __metadata("design:returntype", void 0)
 ], BookReview.prototype, "setSecret", null);
@@ -148,9 +145,6 @@ __decorate([
     snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .method */ .UD,
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
         snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
         snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN]),
     __metadata("design:returntype", void 0)
@@ -160,9 +154,6 @@ __decorate([
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
         snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
         snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN]),
     __metadata("design:returntype", void 0)
 ], BookReview.prototype, "proveReading2", null);
@@ -170,9 +161,6 @@ __decorate([
     snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .method */ .UD,
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
         snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
         snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN]),
     __metadata("design:returntype", void 0)
@@ -182,9 +170,6 @@ __decorate([
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
         snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
         snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN]),
     __metadata("design:returntype", void 0)
 ], BookReview.prototype, "proveReading4", null);
@@ -192,9 +177,6 @@ __decorate([
     snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .method */ .UD,
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
         snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
         snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN]),
     __metadata("design:returntype", void 0)
@@ -204,9 +186,6 @@ __decorate([
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
         snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
         snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN]),
     __metadata("design:returntype", void 0)
 ], BookReview.prototype, "proveReading6", null);
@@ -214,9 +193,6 @@ __decorate([
     snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .method */ .UD,
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
-        snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
         snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN,
         snarkyjs__WEBPACK_IMPORTED_MODULE_0__/* .Field */ .gN]),
     __metadata("design:returntype", void 0)

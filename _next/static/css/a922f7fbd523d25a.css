@@ -106,3 +106,10 @@ a {
   }
 }
 
+.style_header__DTFX5 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+

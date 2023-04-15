@@ -1,0 +1,42 @@
+.style_container__Rckya {
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+}
+
+.style_tokenInfo__qzzOn {
+  margin: 1rem;
+  display: flex;
+}
+
+.style_form__fIonZ {
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.style_img__zV_RZ {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.style_formStack__M1ouA {
+  margin-top: 20px;
+}
+
+.style_minaTransactionStack__xwWpW {
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.style_h2__VU3Ln {
+  margin-top:12px;
+  margin-bottom: 12px;
+}
+
+.style_alignItemsCenter__5x1Gx {
+  display: flex;
+  align-items: center;
+}
