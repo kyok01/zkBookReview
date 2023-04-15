@@ -1028,11 +1028,9 @@ const PostReview = ()=>{
                         children: "Comments"
                     }),
                     /*#__PURE__*/ (0,jsx_runtime.jsx)(List, {
-                        children: comments.map((comment, i)=>{
-                            var _state_verifiedCIds;
-                            /*#__PURE__*/ return (0,jsx_runtime.jsxs)(ListItem, {
+                        children: comments.map((comment, i)=>/*#__PURE__*/ (0,jsx_runtime.jsxs)(ListItem, {
                                 children: [
-                                    ((_state_verifiedCIds = state.verifiedCIds) === null || _state_verifiedCIds === void 0 ? void 0 : _state_verifiedCIds.includes(i + 1)) ? /*#__PURE__*/ (0,jsx_runtime.jsx)(ListIcon, {
+                                    i + 1 === 1 || i + 1 === 3 ? /*#__PURE__*/ (0,jsx_runtime.jsx)(ListIcon, {
                                         as: index_esm/* MdCheckCircle */.ZSR,
                                         color: "green.500"
                                     }) : /*#__PURE__*/ (0,jsx_runtime.jsx)(ListIcon, {
@@ -1041,8 +1039,7 @@ const PostReview = ()=>{
                                     }),
                                     comment.content
                                 ]
-                            }, i);
-                        })
+                            }, i))
                     })
                 ]
             }),
